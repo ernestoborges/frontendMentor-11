@@ -177,7 +177,7 @@ confirmButton.addEventListener("click", function(){
         document.getElementById("wrong-number").innerHTML = "Can't be blank";
         document.getElementById("wrong-number").classList.remove("hide");
         flag = 1;
-    } else if(!/^[1-9]+$/.test(cardNumberInput.value)){
+    } else if(!/^[0-9]+$/.test(cardNumberInput.value)){
         cardNumberInput.classList.add("wrong-input");
         document.getElementById("wrong-number").innerHTML = "Only numbers allowed";
         document.getElementById("wrong-number").classList.remove("hide");
@@ -226,7 +226,7 @@ confirmButton.addEventListener("click", function(){
         document.getElementById("wrong-year").innerHTML = "Can't be blank";
         document.getElementById("wrong-year").classList.remove("hide");
         flag = 1;
-    } else if(!/^[1-9]+$/.test(cardYearInput.value)) {
+    } else if(!/^[0-9]+$/.test(cardYearInput.value)) {
         cardYearInput.classList.add("wrong-input");
         document.getElementById("wrong-year").innerHTML = "Only numbers";
         document.getElementById("wrong-year").classList.remove("hide");
@@ -247,7 +247,7 @@ confirmButton.addEventListener("click", function(){
         document.getElementById("wrong-cvc").innerHTML = "Can't be blank";
         document.getElementById("wrong-cvc").classList.remove("hide");
         flag = 1;
-    } else if(!/^[1-9]+$/.test(cardCvcInput.value)) {
+    } else if(!/^[0-9]+$/.test(cardCvcInput.value)) {
         cardCvcInput.classList.add("wrong-input");
         document.getElementById("wrong-cvc").innerHTML = "Only numbers allowed";
         document.getElementById("wrong-cvc").classList.remove("hide");
