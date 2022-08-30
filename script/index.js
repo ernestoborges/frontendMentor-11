@@ -200,13 +200,12 @@ confirmButton.addEventListener("click", function(){
         document.getElementById("wrong-month").classList.remove("hide");
         flag = 1;
 
-    } else if(!/^[1-9]+$/.test(cardMonthInput.value)) {
+    } else if(!/^[0-9]+$/.test(cardMonthInput.value)) {
         cardMonthInput.classList.add("wrong-input");
         document.getElementById("wrong-month").innerHTML = "Only numbers";
         document.getElementById("wrong-month").classList.remove("hide");
         flag = 1;
-
-    } else if(cardMonthInput.value > 12 || cardMonthInput.value <= 0 ){
+    } else if(parseInt(cardMonthInput.value, 10) > 12 || parseInt(cardMonthInput.value, 10) <= 0 ){
         cardMonthInput.classList.add("wrong-input");
         document.getElementById("wrong-month").innerHTML = "Invalid Month";
         document.getElementById("wrong-month").classList.remove("hide");
