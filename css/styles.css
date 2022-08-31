@@ -227,7 +227,7 @@ input {
     border: 1px solid var(--red);
 }
 
-/*thank tou page*/
+/*thank you page*/
 
 .submit-success-container {
     display: flex;
@@ -301,13 +301,11 @@ input {
         top: 20%;
         right: -70%;
         left: 0;
-        /*transform: translateX(35%);*/
     }
     .cc-back {
         top: auto;
         bottom: 20%;
         right: -100%;
         left: 0;
-        /*transform: translateX(50%);*/
     }
 }
